@@ -4,6 +4,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
 import jakarta.persistence.ManyToOne
+import jakarta.persistence.Table
 import java.time.LocalDateTime
 
 @Entity
@@ -18,6 +19,7 @@ class Article(
 )
 
 @Entity
+@Table(name="users")
 class User(
     var login: String,
     var firstname: String,
